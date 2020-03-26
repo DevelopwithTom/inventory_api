@@ -1,14 +1,13 @@
-from rest_framework.response import Response
-
+# from rest_framework.response import Response
 from rest_framework import viewsets
 from core.models import Product
 from inventory.serializers import ProductSerializer
+
 
 class ProductViewSet(viewsets.ModelViewSet):
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
 
- 
     def get_queryset(self):
         request = self.request
         queryset = super().get_queryset()

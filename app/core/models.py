@@ -10,4 +10,4 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=8, decimal_places=2)
 
     def __str__(self):
-        return "Name: %s, Quantity Available: '%s', Price: £%s" %(self.name, self.quantity, self.price)
+        return "Name: %s, Quantity Available: '%s', Price: £%s" % (self.name, self.quantity, self.price)
