@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM python:3.9.0a5-alpine3.10
 MAINTAINER Tom Mac
 
 ENV PYTHONUNBUFFERED 1
